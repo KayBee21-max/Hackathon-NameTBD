@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// serve static files (optional)
+
 app.use(express.static(path.resolve('./')));
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
